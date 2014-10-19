@@ -12,7 +12,7 @@ public class BinaryNode {
 	}
 
 	public void insert(int key2) {
-		if(key2 <= key){
+		if(key2 < key){
 			if(left == null){
 				left = new BinaryNode(key2);
 			}
@@ -20,7 +20,7 @@ public class BinaryNode {
 				left.insert(key2);
 			}
 		}
-		else{
+		else if(key2 > key){
 			if(right == null){
 				right = new BinaryNode(key2);
 			}
@@ -34,9 +34,9 @@ public class BinaryNode {
 		if(key == key2)
 			return this;
 		BinaryNode node = null;
-		if(key2 <= key)
+		if(key2 < key)
 			node = left;
-		else
+		else if(key2 > key)
 			node = right;
 		if(node != null)
 			return node.find(key2);
