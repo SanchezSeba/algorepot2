@@ -1,9 +1,11 @@
-import avlTree.AVLTree;
+import splayTree.SplayTree;
+
+
 
 public class Main {
 	
 	public static void main(String[] args){
-		AVLTree b = new AVLTree();
+		SplayTree b = new SplayTree();
 		b.insert(3);
 		b.insert(4);
 		b.insert(6);
@@ -13,6 +15,6 @@ public class Main {
 		b.insert(9);
 		b.insert(7);
 		b.insert(12);
-		System.out.println(b.find(6).toString());
+		System.out.println(b.find(5).toString());
 	}
 }
