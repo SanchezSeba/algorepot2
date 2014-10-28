@@ -40,7 +40,7 @@ public class AVLTree {
 					node = rotateLeftRight(node);
 			}
 		}
-		
+		else if(key == node.getKey()) return node;
 		node.setHeight(Math.max(height(node.left), height(node.right)) + 1);
 		
 		return node;

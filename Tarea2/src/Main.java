@@ -13,8 +13,8 @@ public class Main {
 		b.insert(8);
 		b.insert(10);
 		b.insert(9);
-		b.insert(7);
-		b.insert(12);
+		b.insert(9);
+		b.insert(3);
 		System.out.println(b.find(5).toString());
 	}
 }

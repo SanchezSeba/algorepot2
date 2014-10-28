@@ -29,12 +29,13 @@ public class SplayTree {
 			root.left = null;
 			root = node;
 		}
-		else{
+		else if(key > root.getKey()){
 			node.right = root.right;
 			node.left = root;
 			root.right = null;
 			root = node;
 		}
+		else return;
 	}
 
 	private SplayNode splay(SplayNode node, int key) {
@@ -56,7 +57,7 @@ public class SplayTree {
 				return node;
 			return rotateRight(node);
 		}
-		else{
+		else if(key > node.getKey()){
 			if(node.right == null)
 				return node;
 			if(key < node.right.getKey()){
@@ -72,6 +73,7 @@ public class SplayTree {
 				return node;
 			return rotateLeft(node);
 		}
+		else return node;
 	}
 
 	private SplayNode rotateLeft(SplayNode node) {
