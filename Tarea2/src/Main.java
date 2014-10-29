@@ -5,7 +5,7 @@ import splayTree.SplayTree;
 public class Main {
 	
 	public static void main(String[] args){
-		SplayTree b = new SplayTree();
+		/*SplayTree b = new SplayTree();
 		b.insert(3);
 		b.insert(4);
 		b.insert(6);
@@ -14,7 +14,7 @@ public class Main {
 		b.insert(10);
 		b.insert(9);
 		b.insert(9);
-		b.insert(3);
-		System.out.println(b.find(5).toString());
+		b.insert(3);*/
+		System.out.println((int)Math.ceil(12.32323));
 	}
 }
