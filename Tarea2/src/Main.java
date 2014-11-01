@@ -15,6 +15,7 @@ public class Main {
 		b.insert(9);
 		b.insert(9);
 		b.insert(3);*/
-		System.out.println((int)Math.ceil(12.32323));
+		int []a = new int[3];
+		System.out.println(10%10);
 	}
 }
