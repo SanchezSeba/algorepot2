@@ -1,11 +1,10 @@
-import splayTree.SplayTree;
-
+import vEBTree.VEBTree;
 
 
 public class Main {
 	
 	public static void main(String[] args){
-		/*SplayTree b = new SplayTree();
+		VEBTree b = new VEBTree(25);
 		b.insert(3);
 		b.insert(4);
 		b.insert(6);
@@ -14,8 +13,7 @@ public class Main {
 		b.insert(10);
 		b.insert(9);
 		b.insert(9);
-		b.insert(3);*/
-		int []a = new int[3];
-		System.out.println(10%10);
+		b.insert(3);
+		System.out.println(b.find(2));
 	}
 }

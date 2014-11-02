@@ -37,4 +37,17 @@ public class VEBTree {
 		if(key > node.max)
 			node.max = key;
 	}
+	
+	public boolean find(int key){
+		return find(root, key);
+	}
+
+	private boolean find(VEBNode node, int key) {
+		if(node.min == key || node.max == key)
+			return true;
+		if(node.maxSize == 2 || node.min > key || node.max < key)
+			return false;
+		else
+			return find(node.cluster[(int)(key / node.cluster.length)], (int)(key % node.cluster.length));
+	}
 }
